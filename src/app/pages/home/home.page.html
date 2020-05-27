@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="morado">
+    <ion-title color="light">
+      ¡Bienvendo a Social Music!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
+
+    <ion-slide style="display: block;">
+
+      <ion-slides class="form" pager="true" [options]="horizontal">
+
+        <ion-slide *ngFor="let article of infor">
+
+
+          
+          <ion-card>
+          <div class="page">
+            <div class="title">
+              <h1>{{article.nombre}}</h1>
+              <p>{{article.des}}</p>
+            </div>
+            <img src={{article.img}}/>
+            <p>{{article.fuente}}</p>
+          </div>
+          </ion-card>
+          
+
+          
+              <!--
+            <ion-card-header>
+              <ion-card-title>{{ article.nombre }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>{{ article.des }}</ion-card-content>
+            <ion-card-content aling="justify">{{ article.fuente }}</ion-card-content>
+          -->
+          
+
+        </ion-slide>
+      </ion-slides>
+      </ion-slide>
+     <ion-slide>
+
+     </ion-slide>
+  </ion-slides>
+</ion-content>
