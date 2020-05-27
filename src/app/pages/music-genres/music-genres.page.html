@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Generos Musicales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-img src= "https://resistencia.es/wp-content/uploads/2018/10/music-833x474.png"></ion-img>
+      <ion-card-title>Social Music</ion-card-title>
+      <ion-card-subtitle>¡La red social musical!</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Empieza hablar con gente sobre tus artistas favoritos
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-list>
+
+    <ion-item *ngFor ="let genre of genres" [routerLink] = "['/home']">
+
+      <ion-avatar slot="start">
+        <ion-img [src]= "genre.imgURL"></ion-img>
+      </ion-avatar>
+
+      <ion-label color="dark">
+        {{genre.title}}
+      </ion-label>
+      <ion-label color="medium">
+        {{genre.artits}}
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
