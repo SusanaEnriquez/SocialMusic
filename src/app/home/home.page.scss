@@ -1,0 +1,82 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+.form{
+  height: 100%;
+  background:black;
+  --bullet-background:black; 
+  --bullet-background-active:black;
+};
+
+.page{  
+  width: 96%; 
+  height: 96%;
+}
+
+.nombre{
+  position: fixed;
+  width: 96%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+}
+ img{
+  object-fit: cover ; 
+  width: 100%;
+  object-position: center;
+  border-radius: 25px 25px 20px 20px ;
+};
+
+.page h1{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-weight: bold;
+ 
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.page p{
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+ 
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.option{
+ 
+  height: 15%;
+}
+ 
+.option h1{
+  text-align: center;
+  background: white;
+}
+
+#container a {
+  text-decoration: none;
+}
+
