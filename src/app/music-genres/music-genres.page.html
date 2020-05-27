@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>music genres</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item *ngFor ="let genre of genres" [routerLink] = "['/home']">
+      <ion-avatar slot="start">
+        <ion-img [src]= "genre.imgURL"></ion-img>
+      </ion-avatar>
+
+      <ion-label color="dark">
+        {{genre.title}}
+      </ion-label>
+      <ion-label color="medium">
+        {{genre.artits}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
